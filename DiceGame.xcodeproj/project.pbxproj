@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFB2EC1A1AF9534F0007CF50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2EC191AF9534F0007CF50 /* main.m */; };
+		EFB2EC1D1AF9534F0007CF50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2EC1C1AF9534F0007CF50 /* AppDelegate.m */; };
+		EFB2EC201AF9534F0007CF50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2EC1F1AF9534F0007CF50 /* ViewController.m */; };
+		EFB2EC231AF9534F0007CF50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB2EC211AF9534F0007CF50 /* Main.storyboard */; };
+		EFB2EC251AF9534F0007CF50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB2EC241AF9534F0007CF50 /* Images.xcassets */; };
+		EFB2EC281AF9534F0007CF50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB2EC261AF9534F0007CF50 /* LaunchScreen.xib */; };
+		EFB2EC341AF9534F0007CF50 /* DiceGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2EC331AF9534F0007CF50 /* DiceGameTests.m */; };
+		EFB2EC481AF953570007CF50 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2EC471AF953570007CF50 /* InterfaceController.m */; };
+		EFB2EC4B1AF953570007CF50 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2EC4A1AF953570007CF50 /* NotificationController.m */; };
+		EFB2EC4D1AF953570007CF50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB2EC4C1AF953570007CF50 /* Images.xcassets */; };
+		EFB2EC511AF953570007CF50 /* DiceGame WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = EFB2EC501AF953570007CF50 /* DiceGame WatchKit App.app */; };
+		EFB2EC591AF953570007CF50 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB2EC571AF953570007CF50 /* Interface.storyboard */; };
+		EFB2EC5B1AF953570007CF50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB2EC5A1AF953570007CF50 /* Images.xcassets */; };
+		EFB2EC5E1AF953570007CF50 /* DiceGame WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EFB2EC411AF953570007CF50 /* DiceGame WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EFB2EC681AF956FD0007CF50 /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2EC671AF956FD0007CF50 /* TestController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFB2EC2E1AF9534F0007CF50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB2EC0C1AF9534F0007CF50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB2EC131AF9534F0007CF50;
+			remoteInfo = DiceGame;
+		};
+		EFB2EC521AF953570007CF50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB2EC0C1AF9534F0007CF50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB2EC4F1AF953570007CF50;
+			remoteInfo = "DiceGame WatchKit App";
+		};
+		EFB2EC5C1AF953570007CF50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB2EC0C1AF9534F0007CF50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB2EC401AF953570007CF50;
+			remoteInfo = "DiceGame WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EFB2EC651AF953570007CF50 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EFB2EC5E1AF953570007CF50 /* DiceGame WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EFB2EC141AF9534F0007CF50 /* DiceGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB2EC181AF9534F0007CF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB2EC191AF9534F0007CF50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFB2EC1B1AF9534F0007CF50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFB2EC1C1AF9534F0007CF50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFB2EC1E1AF9534F0007CF50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EFB2EC1F1AF9534F0007CF50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EFB2EC221AF9534F0007CF50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFB2EC241AF9534F0007CF50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EFB2EC271AF9534F0007CF50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EFB2EC2D1AF9534F0007CF50 /* DiceGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB2EC321AF9534F0007CF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB2EC331AF9534F0007CF50 /* DiceGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceGameTests.m; sourceTree = "<group>"; };
+		EFB2EC411AF953570007CF50 /* DiceGame WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DiceGame WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB2EC441AF953570007CF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB2EC451AF953570007CF50 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EFB2EC461AF953570007CF50 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		EFB2EC471AF953570007CF50 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		EFB2EC491AF953570007CF50 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		EFB2EC4A1AF953570007CF50 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		EFB2EC4C1AF953570007CF50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EFB2EC501AF953570007CF50 /* DiceGame WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DiceGame WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB2EC561AF953570007CF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB2EC581AF953570007CF50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EFB2EC5A1AF953570007CF50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EFB2EC661AF956FD0007CF50 /* TestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestController.h; sourceTree = "<group>"; };
+		EFB2EC671AF956FD0007CF50 /* TestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFB2EC111AF9534F0007CF50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB2EC2A1AF9534F0007CF50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB2EC3E1AF953570007CF50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFB2EC0B1AF9534F0007CF50 = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC161AF9534F0007CF50 /* DiceGame */,
+				EFB2EC301AF9534F0007CF50 /* DiceGameTests */,
+				EFB2EC421AF953570007CF50 /* DiceGame WatchKit Extension */,
+				EFB2EC541AF953570007CF50 /* DiceGame WatchKit App */,
+				EFB2EC151AF9534F0007CF50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFB2EC151AF9534F0007CF50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC141AF9534F0007CF50 /* DiceGame.app */,
+				EFB2EC2D1AF9534F0007CF50 /* DiceGameTests.xctest */,
+				EFB2EC411AF953570007CF50 /* DiceGame WatchKit Extension.appex */,
+				EFB2EC501AF953570007CF50 /* DiceGame WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB2EC161AF9534F0007CF50 /* DiceGame */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC1B1AF9534F0007CF50 /* AppDelegate.h */,
+				EFB2EC1C1AF9534F0007CF50 /* AppDelegate.m */,
+				EFB2EC1E1AF9534F0007CF50 /* ViewController.h */,
+				EFB2EC1F1AF9534F0007CF50 /* ViewController.m */,
+				EFB2EC211AF9534F0007CF50 /* Main.storyboard */,
+				EFB2EC241AF9534F0007CF50 /* Images.xcassets */,
+				EFB2EC261AF9534F0007CF50 /* LaunchScreen.xib */,
+				EFB2EC171AF9534F0007CF50 /* Supporting Files */,
+			);
+			path = DiceGame;
+			sourceTree = "<group>";
+		};
+		EFB2EC171AF9534F0007CF50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC181AF9534F0007CF50 /* Info.plist */,
+				EFB2EC191AF9534F0007CF50 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFB2EC301AF9534F0007CF50 /* DiceGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC331AF9534F0007CF50 /* DiceGameTests.m */,
+				EFB2EC311AF9534F0007CF50 /* Supporting Files */,
+			);
+			path = DiceGameTests;
+			sourceTree = "<group>";
+		};
+		EFB2EC311AF9534F0007CF50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC321AF9534F0007CF50 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFB2EC421AF953570007CF50 /* DiceGame WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC461AF953570007CF50 /* InterfaceController.h */,
+				EFB2EC471AF953570007CF50 /* InterfaceController.m */,
+				EFB2EC491AF953570007CF50 /* NotificationController.h */,
+				EFB2EC4A1AF953570007CF50 /* NotificationController.m */,
+				EFB2EC4C1AF953570007CF50 /* Images.xcassets */,
+				EFB2EC431AF953570007CF50 /* Supporting Files */,
+				EFB2EC661AF956FD0007CF50 /* TestController.h */,
+				EFB2EC671AF956FD0007CF50 /* TestController.m */,
+			);
+			path = "DiceGame WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EFB2EC431AF953570007CF50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC441AF953570007CF50 /* Info.plist */,
+				EFB2EC451AF953570007CF50 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFB2EC541AF953570007CF50 /* DiceGame WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC571AF953570007CF50 /* Interface.storyboard */,
+				EFB2EC5A1AF953570007CF50 /* Images.xcassets */,
+				EFB2EC551AF953570007CF50 /* Supporting Files */,
+			);
+			path = "DiceGame WatchKit App";
+			sourceTree = "<group>";
+		};
+		EFB2EC551AF953570007CF50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2EC561AF953570007CF50 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFB2EC131AF9534F0007CF50 /* DiceGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB2EC371AF9534F0007CF50 /* Build configuration list for PBXNativeTarget "DiceGame" */;
+			buildPhases = (
+				EFB2EC101AF9534F0007CF50 /* Sources */,
+				EFB2EC111AF9534F0007CF50 /* Frameworks */,
+				EFB2EC121AF9534F0007CF50 /* Resources */,
+				EFB2EC651AF953570007CF50 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFB2EC5D1AF953570007CF50 /* PBXTargetDependency */,
+			);
+			name = DiceGame;
+			productName = DiceGame;
+			productReference = EFB2EC141AF9534F0007CF50 /* DiceGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFB2EC2C1AF9534F0007CF50 /* DiceGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB2EC3A1AF9534F0007CF50 /* Build configuration list for PBXNativeTarget "DiceGameTests" */;
+			buildPhases = (
+				EFB2EC291AF9534F0007CF50 /* Sources */,
+				EFB2EC2A1AF9534F0007CF50 /* Frameworks */,
+				EFB2EC2B1AF9534F0007CF50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFB2EC2F1AF9534F0007CF50 /* PBXTargetDependency */,
+			);
+			name = DiceGameTests;
+			productName = DiceGameTests;
+			productReference = EFB2EC2D1AF9534F0007CF50 /* DiceGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFB2EC401AF953570007CF50 /* DiceGame WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB2EC621AF953570007CF50 /* Build configuration list for PBXNativeTarget "DiceGame WatchKit Extension" */;
+			buildPhases = (
+				EFB2EC3D1AF953570007CF50 /* Sources */,
+				EFB2EC3E1AF953570007CF50 /* Frameworks */,
+				EFB2EC3F1AF953570007CF50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFB2EC531AF953570007CF50 /* PBXTargetDependency */,
+			);
+			name = "DiceGame WatchKit Extension";
+			productName = "DiceGame WatchKit Extension";
+			productReference = EFB2EC411AF953570007CF50 /* DiceGame WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		EFB2EC4F1AF953570007CF50 /* DiceGame WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB2EC5F1AF953570007CF50 /* Build configuration list for PBXNativeTarget "DiceGame WatchKit App" */;
+			buildPhases = (
+				EFB2EC4E1AF953570007CF50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DiceGame WatchKit App";
+			productName = "DiceGame WatchKit App";
+			productReference = EFB2EC501AF953570007CF50 /* DiceGame WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFB2EC0C1AF9534F0007CF50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = GameHouse;
+				TargetAttributes = {
+					EFB2EC131AF9534F0007CF50 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					EFB2EC2C1AF9534F0007CF50 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = EFB2EC131AF9534F0007CF50;
+					};
+					EFB2EC401AF953570007CF50 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					EFB2EC4F1AF953570007CF50 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = EFB2EC0F1AF9534F0007CF50 /* Build configuration list for PBXProject "DiceGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFB2EC0B1AF9534F0007CF50;
+			productRefGroup = EFB2EC151AF9534F0007CF50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFB2EC131AF9534F0007CF50 /* DiceGame */,
+				EFB2EC2C1AF9534F0007CF50 /* DiceGameTests */,
+				EFB2EC401AF953570007CF50 /* DiceGame WatchKit Extension */,
+				EFB2EC4F1AF953570007CF50 /* DiceGame WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFB2EC121AF9534F0007CF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB2EC231AF9534F0007CF50 /* Main.storyboard in Resources */,
+				EFB2EC281AF9534F0007CF50 /* LaunchScreen.xib in Resources */,
+				EFB2EC251AF9534F0007CF50 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB2EC2B1AF9534F0007CF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB2EC3F1AF953570007CF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB2EC4D1AF953570007CF50 /* Images.xcassets in Resources */,
+				EFB2EC511AF953570007CF50 /* DiceGame WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB2EC4E1AF953570007CF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB2EC591AF953570007CF50 /* Interface.storyboard in Resources */,
+				EFB2EC5B1AF953570007CF50 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFB2EC101AF9534F0007CF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB2EC201AF9534F0007CF50 /* ViewController.m in Sources */,
+				EFB2EC1D1AF9534F0007CF50 /* AppDelegate.m in Sources */,
+				EFB2EC1A1AF9534F0007CF50 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB2EC291AF9534F0007CF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB2EC341AF9534F0007CF50 /* DiceGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB2EC3D1AF953570007CF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB2EC4B1AF953570007CF50 /* NotificationController.m in Sources */,
+				EFB2EC681AF956FD0007CF50 /* TestController.m in Sources */,
+				EFB2EC481AF953570007CF50 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFB2EC2F1AF9534F0007CF50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB2EC131AF9534F0007CF50 /* DiceGame */;
+			targetProxy = EFB2EC2E1AF9534F0007CF50 /* PBXContainerItemProxy */;
+		};
+		EFB2EC531AF953570007CF50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB2EC4F1AF953570007CF50 /* DiceGame WatchKit App */;
+			targetProxy = EFB2EC521AF953570007CF50 /* PBXContainerItemProxy */;
+		};
+		EFB2EC5D1AF953570007CF50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB2EC401AF953570007CF50 /* DiceGame WatchKit Extension */;
+			targetProxy = EFB2EC5C1AF953570007CF50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFB2EC211AF9534F0007CF50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB2EC221AF9534F0007CF50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFB2EC261AF9534F0007CF50 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB2EC271AF9534F0007CF50 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		EFB2EC571AF953570007CF50 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB2EC581AF953570007CF50 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFB2EC351AF9534F0007CF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFB2EC361AF9534F0007CF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFB2EC381AF9534F0007CF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DiceGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EFB2EC391AF9534F0007CF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DiceGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EFB2EC3B1AF9534F0007CF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DiceGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceGame.app/DiceGame";
+			};
+			name = Debug;
+		};
+		EFB2EC3C1AF9534F0007CF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DiceGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceGame.app/DiceGame";
+			};
+			name = Release;
+		};
+		EFB2EC601AF953570007CF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = DiceGame_WatchKit_Extension;
+				INFOPLIST_FILE = "DiceGame WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		EFB2EC611AF953570007CF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = DiceGame_WatchKit_Extension;
+				INFOPLIST_FILE = "DiceGame WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		EFB2EC631AF953570007CF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DiceGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EFB2EC641AF953570007CF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DiceGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFB2EC0F1AF9534F0007CF50 /* Build configuration list for PBXProject "DiceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB2EC351AF9534F0007CF50 /* Debug */,
+				EFB2EC361AF9534F0007CF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB2EC371AF9534F0007CF50 /* Build configuration list for PBXNativeTarget "DiceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB2EC381AF9534F0007CF50 /* Debug */,
+				EFB2EC391AF9534F0007CF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFB2EC3A1AF9534F0007CF50 /* Build configuration list for PBXNativeTarget "DiceGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB2EC3B1AF9534F0007CF50 /* Debug */,
+				EFB2EC3C1AF9534F0007CF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFB2EC5F1AF953570007CF50 /* Build configuration list for PBXNativeTarget "DiceGame WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB2EC601AF953570007CF50 /* Debug */,
+				EFB2EC611AF953570007CF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFB2EC621AF953570007CF50 /* Build configuration list for PBXNativeTarget "DiceGame WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB2EC631AF953570007CF50 /* Debug */,
+				EFB2EC641AF953570007CF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFB2EC0C1AF9534F0007CF50 /* Project object */;
+}
