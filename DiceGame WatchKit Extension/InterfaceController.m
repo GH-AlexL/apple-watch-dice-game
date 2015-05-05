@@ -14,7 +14,11 @@ static const NSUInteger kDiceCount = 6;
 {
     NSUInteger _blueNumber;
     NSUInteger _blueDice;
+    
+    NSInteger _moveIndex;
 }
+
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *opponentGroup;
 
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *buttonBlueNumber;
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *buttonBlueDice;
@@ -25,6 +29,9 @@ static const NSUInteger kDiceCount = 6;
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *blueDice4;
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *blueDice5;
 
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *redNumber;
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *redDice;
+
 @end
 
 
@@ -34,7 +41,9 @@ static const NSUInteger kDiceCount = 6;
 {
     [super awakeWithContext:context];
     
-    [self setBlueNumber:0];
+    [self setOpponentGroupEnabled:false];
+    
+    [self setBlueNumber:1];
     [self setBlueDice:0];
     
     [self shuffleDice];
@@ -59,6 +68,8 @@ static const NSUInteger kDiceCount = 6;
     
     NSString *imageName = [NSString stringWithFormat:@"numbers_blue_%ld", (number + 1)];
     [_buttonBlueNumber setBackgroundImageNamed:imageName];
+    
+    [self setOpponentGroupEnabled:false];
 }
 
 - (void)setBlueDice:(NSUInteger)number
@@ -67,6 +78,20 @@ static const NSUInteger kDiceCount = 6;
     
     NSString *imageName = [NSString stringWithFormat:@"blue-dice-%ld", (number + 1)];
     [_buttonBlueDice setBackgroundImageNamed:imageName];
+    
+    [self setOpponentGroupEnabled:false];
+}
+
+- (void)setRedNumberIndex:(NSUInteger)index
+{
+    NSString *imageName = [NSString stringWithFormat:@"numbers_red_%ld", (index + 1)];
+    [_redNumber setImageNamed:imageName];
+}
+
+- (void)setRedDiceIndex:(NSUInteger)index
+{
+    NSString *imageName = [NSString stringWithFormat:@"red-dice-%ld", (index + 1)];
+    [_redDice setImageNamed:imageName];
 }
 
 #pragma mark -
@@ -88,6 +113,15 @@ static const NSUInteger kDiceCount = 6;
         NSString *imageName = [NSString stringWithFormat:@"blue-dice-%ld", (index + 1)];
         [diceButton setBackgroundImageNamed:imageName];
     }
+}
+
+#pragma mark -
+#pragma mark Red Group
+
+- (void)setOpponentGroupEnabled:(BOOL)flag
+{
+    NSString *imageName = flag ? @"button-red-higlight" : @"button_black_";
+    [_opponentGroup setBackgroundImageNamed:imageName];
 }
 
 #pragma mark -
@@ -113,6 +147,33 @@ static const NSUInteger kDiceCount = 6;
 {
     NSUInteger nextNumber = (_blueDice + 1 ) % kDiceCount;
     [self setBlueDice:nextNumber];
+}
+
+- (IBAction)onBidClick:(id)sender
+{
+    if (_moveIndex == 0)
+    {
+        [self setOpponentGroupEnabled:true];
+        
+        [self setRedNumberIndex:2];
+        [self setRedDiceIndex:1];
+        
+        _moveIndex++;
+    }
+    else if (_moveIndex == 1)
+    {
+        [self setOpponentGroupEnabled:true];
+        
+        [self setRedNumberIndex:4];
+        [self setRedDiceIndex:5];
+        
+        _moveIndex++;
+    }
+    else
+    {
+        [self pushControllerWithName:@"trialEnded" context:nil];
+    }
+
 }
 
 @end

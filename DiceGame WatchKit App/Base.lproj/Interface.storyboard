@@ -12,8 +12,8 @@
                     <items>
                         <group width="100" height="40" alignment="center" backgroundImage="button-red-higlight" spacing="7" id="Ffn-iX-Alu">
                             <items>
-                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="numbers_red_1" id="ouR-2N-h5j">
-                                    <variation key="device=watch42mm" height="29" width="11"/>
+                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="numbers_red_1" contentMode="scaleAspectFit" id="ouR-2N-h5j">
+                                    <variation key="device=watch42mm" height="29" width="26"/>
                                 </imageView>
                                 <imageView width="40" height="40" alignment="center" verticalAlignment="center" image="red-dice-1" id="1te-Xd-evD">
                                     <variation key="device=watch42mm" height="30" width="30"/>
@@ -62,6 +62,9 @@
                         </group>
                         <button alignment="center" title="BID" backgroundImage="button-green" id="bTr-Do-h3S">
                             <fontDescription key="font" type="system" pointSize="27"/>
+                            <connections>
+                                <action selector="onBidClick:" destination="AgC-eL-Hgc" id="PIB-al-fV6"/>
+                            </connections>
                         </button>
                         <group width="1" alignment="left" spacing="5" id="Tpr-EI-n0O">
                             <items>
@@ -165,10 +168,48 @@
                         <outlet property="blueDice5" destination="g54-XI-biS" id="Myy-cN-Gbe"/>
                         <outlet property="buttonBlueDice" destination="hnS-G4-l9p" id="cnp-Lo-73G"/>
                         <outlet property="buttonBlueNumber" destination="eEp-t2-liB" id="BAl-gu-RgG"/>
+                        <outlet property="opponentGroup" destination="Ffn-iX-Alu" id="Eus-or-fZx"/>
+                        <outlet property="redDice" destination="1te-Xd-evD" id="yp9-JH-Jaa"/>
+                        <outlet property="redNumber" destination="ouR-2N-h5j" id="7Au-rl-Bgh"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="219.69230769230771" y="244.97435897435898"/>
+        </scene>
+        <!--Trial Ended-->
+        <scene sceneID="Y9y-JK-HyU">
+            <objects>
+                <controller identifier="trialEnded" title="Trial Ended" id="zUX-Nj-pmJ">
+                    <items>
+                        <label alignment="center" text="Unlock Full Game" id="zE9-Sh-W3m"/>
+                        <label alignment="center" text="For Only:" id="lf4-fO-CNu"/>
+                        <label alignment="center" text="$6.99/mo" id="Ai7-b4-BH5">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="33"/>
+                        </label>
+                        <button width="1" alignment="left" title="Buy Now!" id="ozi-Oi-xaZ">
+                            <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="zE9-Sh-W3m"/>
+                            <exclude reference="lf4-fO-CNu"/>
+                            <exclude reference="Ai7-b4-BH5"/>
+                            <exclude reference="ozi-Oi-xaZ"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="zE9-Sh-W3m"/>
+                            <include reference="lf4-fO-CNu"/>
+                            <include reference="Ai7-b4-BH5"/>
+                            <include reference="ozi-Oi-xaZ"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="432.41025641025647" y="244.53846153846155"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
