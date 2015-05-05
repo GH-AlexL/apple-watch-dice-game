@@ -34,9 +34,16 @@
                         </group>
                         <group width="1" alignment="center" id="vLa-ae-1mB">
                             <items>
-                                <button alignment="left" backgroundImage="numbers_blue_6" id="eEp-t2-liB"/>
+                                <button alignment="left" backgroundImage="numbers_blue_6" id="eEp-t2-liB">
+                                    <connections>
+                                        <action selector="onBlueNumberClick" destination="AgC-eL-Hgc" id="sJV-JI-KB5"/>
+                                    </connections>
+                                </button>
                                 <button width="100" height="100" alignment="right" backgroundImage="blue-dice-6" id="hnS-G4-l9p">
                                     <variation key="device=watch42mm" height="73" width="73"/>
+                                    <connections>
+                                        <action selector="onBlueDiceClick" destination="AgC-eL-Hgc" id="Jen-92-yuC"/>
+                                    </connections>
                                 </button>
                             </items>
                             <edgeInsets key="margins" left="10" right="10" top="0.0" bottom="0.0"/>
@@ -150,6 +157,15 @@
                             <include reference="hmC-Of-sl5"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <outlet property="blueDice1" destination="gzS-t8-ROP" id="DDf-31-HBE"/>
+                        <outlet property="blueDice2" destination="rfq-oe-IRh" id="IDa-B9-JyK"/>
+                        <outlet property="blueDice3" destination="3JF-ts-Udf" id="MjU-PQ-q2G"/>
+                        <outlet property="blueDice4" destination="BVs-0M-Kqv" id="B7j-tj-LUX"/>
+                        <outlet property="blueDice5" destination="g54-XI-biS" id="Myy-cN-Gbe"/>
+                        <outlet property="buttonBlueDice" destination="hnS-G4-l9p" id="cnp-Lo-73G"/>
+                        <outlet property="buttonBlueNumber" destination="eEp-t2-liB" id="BAl-gu-RgG"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="219.69230769230771" y="244.97435897435898"/>
