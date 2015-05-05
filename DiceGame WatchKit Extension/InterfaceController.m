@@ -43,7 +43,7 @@ static const NSUInteger kDiceCount = 6;
     
     [self setOpponentGroupEnabled:false];
     
-    [self setBlueNumber:1];
+    [self setBlueNumber:0];
     [self setBlueDice:0];
     
     [self shuffleDice];
@@ -129,12 +129,12 @@ static const NSUInteger kDiceCount = 6;
 
 - (IBAction)doLiarAction
 {
-    NSLog(@"Liar");
+    [self pushControllerWithName:@"trialEnded" context:nil];
 }
 
 - (IBAction)doSpotOnAction
 {
-    NSLog(@"Spot on");
+    [self pushControllerWithName:@"trialEnded" context:nil];
 }
 
 - (IBAction)onBlueNumberClick
@@ -174,11 +174,6 @@ static const NSUInteger kDiceCount = 6;
             _moveIndex++;
         });
     }
-    else
-    {
-        [self pushControllerWithName:@"trialEnded" context:nil];
-    }
-
 }
 
 @end
