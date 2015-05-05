@@ -154,13 +154,6 @@
             </objects>
             <point key="canvasLocation" x="219.69230769230771" y="244.97435897435898"/>
         </scene>
-        <!--Interface Controller-->
-        <scene sceneID="bXR-Xm-9P7">
-            <objects>
-                <controller id="1GP-gK-O2a"/>
-            </objects>
-            <point key="canvasLocation" x="445" y="345"/>
-        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
