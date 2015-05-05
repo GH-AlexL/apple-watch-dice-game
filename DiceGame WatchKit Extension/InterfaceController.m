@@ -32,6 +32,19 @@
     [super didDeactivate];
 }
 
+#pragma mark -
+#pragma mark Actions
+
+- (IBAction)doLiarAction
+{
+    NSLog(@"Liar");
+}
+
+- (IBAction)doSpotOnAction
+{
+    NSLog(@"Spot on");
+}
+
 @end
 
 

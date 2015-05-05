@@ -5,27 +5,154 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Liar's Dice-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller title="Liar's Dice" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="c19-nC-Lo7">
-                            <connections>
-                                <segue destination="1GP-gK-O2a" kind="push" id="M8C-od-0Ra"/>
-                            </connections>
+                        <group width="100" height="40" alignment="center" backgroundImage="button-red-higlight" spacing="7" id="Ffn-iX-Alu">
+                            <items>
+                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="numbers_red_1" id="ouR-2N-h5j">
+                                    <variation key="device=watch42mm" height="29" width="11"/>
+                                </imageView>
+                                <imageView width="40" height="40" alignment="center" verticalAlignment="center" image="red-dice-1" id="1te-Xd-evD">
+                                    <variation key="device=watch42mm" height="30" width="30"/>
+                                </imageView>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="ouR-2N-h5j"/>
+                                    <exclude reference="1te-Xd-evD"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm" width="133">
+                                <mask key="items">
+                                    <include reference="ouR-2N-h5j"/>
+                                    <include reference="1te-Xd-evD"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" alignment="center" id="vLa-ae-1mB">
+                            <items>
+                                <button alignment="left" backgroundImage="numbers_blue_6" id="eEp-t2-liB"/>
+                                <button width="100" height="100" alignment="right" backgroundImage="blue-dice-6" id="hnS-G4-l9p">
+                                    <variation key="device=watch42mm" height="73" width="73"/>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="10" right="10" top="0.0" bottom="0.0"/>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="eEp-t2-liB"/>
+                                    <exclude reference="hnS-G4-l9p"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="eEp-t2-liB"/>
+                                    <include reference="hnS-G4-l9p"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <button alignment="center" title="BID" backgroundImage="button-green" id="bTr-Do-h3S">
+                            <fontDescription key="font" type="system" pointSize="27"/>
                         </button>
+                        <group width="1" alignment="left" spacing="5" id="Tpr-EI-n0O">
+                            <items>
+                                <button width="100" height="100" alignment="left" backgroundImage="blue-dice-1" id="gzS-t8-ROP">
+                                    <variation key="device=watch42mm" height="41" width="41"/>
+                                </button>
+                                <button width="100" height="100" alignment="left" backgroundImage="blue-dice-2" id="rfq-oe-IRh">
+                                    <variation key="device=watch42mm" height="41" width="41"/>
+                                </button>
+                                <button width="100" height="100" alignment="left" backgroundImage="blue-dice-3" id="3JF-ts-Udf">
+                                    <variation key="device=watch42mm" height="41" width="41"/>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="10" right="10" top="0.0" bottom="0.0"/>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="gzS-t8-ROP"/>
+                                    <exclude reference="rfq-oe-IRh"/>
+                                    <exclude reference="3JF-ts-Udf"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="gzS-t8-ROP"/>
+                                    <include reference="rfq-oe-IRh"/>
+                                    <include reference="3JF-ts-Udf"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" alignment="left" spacing="5" id="hmC-Of-sl5">
+                            <items>
+                                <button width="100" height="100" alignment="center" backgroundImage="blue-dice-4" id="BVs-0M-Kqv">
+                                    <variation key="device=watch42mm" height="41" width="41"/>
+                                </button>
+                                <button width="100" height="100" alignment="center" backgroundImage="blue-dice-5" id="g54-XI-biS">
+                                    <variation key="device=watch42mm" height="41" width="41"/>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="10" right="10" top="0.0" bottom="0.0"/>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="BVs-0M-Kqv"/>
+                                    <exclude reference="g54-XI-biS"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="BVs-0M-Kqv"/>
+                                    <include reference="g54-XI-biS"/>
+                                </mask>
+                            </variation>
+                        </group>
                     </items>
-                    <menu key="menu" id="W8D-LH-IBQ">
+                    <menu key="menu" id="HVx-07-GS3">
                         <items>
-                            <menuItem title="Accept" icon="accept" id="3ol-X2-IWx"/>
-                            <menuItem title="Add" icon="add" id="Rf0-k5-Eb1"/>
-                            <menuItem title="Decline" icon="decline" id="8C7-Wn-ehr"/>
+                            <menuItem title="Liar" icon="accept" id="v9S-5J-06q">
+                                <connections>
+                                    <action selector="doLiarAction" destination="AgC-eL-Hgc" id="pOw-JD-j3R"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Spot on" icon="decline" id="M73-c9-r6f">
+                                <connections>
+                                    <action selector="doSpotOnAction" destination="AgC-eL-Hgc" id="Lny-z9-RuA"/>
+                                </connections>
+                            </menuItem>
                         </items>
+                        <variation key="default">
+                            <mask key="items">
+                                <exclude reference="M73-c9-r6f"/>
+                            </mask>
+                        </variation>
+                        <variation key="device=watch42mm">
+                            <mask key="items">
+                                <include reference="M73-c9-r6f"/>
+                            </mask>
+                        </variation>
                     </menu>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="Ffn-iX-Alu"/>
+                            <exclude reference="vLa-ae-1mB"/>
+                            <exclude reference="bTr-Do-h3S"/>
+                            <exclude reference="Tpr-EI-n0O"/>
+                            <exclude reference="hmC-Of-sl5"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="Ffn-iX-Alu"/>
+                            <include reference="vLa-ae-1mB"/>
+                            <include reference="bTr-Do-h3S"/>
+                            <include reference="Tpr-EI-n0O"/>
+                            <include reference="hmC-Of-sl5"/>
+                        </mask>
+                    </variation>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219.69230769230771" y="244.97435897435898"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="bXR-Xm-9P7">
