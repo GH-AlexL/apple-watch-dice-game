@@ -153,21 +153,26 @@ static const NSUInteger kDiceCount = 6;
 {
     if (_moveIndex == 0)
     {
-        [self setOpponentGroupEnabled:true];
-        
-        [self setRedNumberIndex:2];
-        [self setRedDiceIndex:1];
-        
-        _moveIndex++;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self setOpponentGroupEnabled:true];
+            
+            [self setRedNumberIndex:2];
+            [self setRedDiceIndex:1];
+            
+            _moveIndex++;
+        });
+
     }
     else if (_moveIndex == 1)
     {
-        [self setOpponentGroupEnabled:true];
-        
-        [self setRedNumberIndex:4];
-        [self setRedDiceIndex:5];
-        
-        _moveIndex++;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self setOpponentGroupEnabled:true];
+            
+            [self setRedNumberIndex:4];
+            [self setRedDiceIndex:5];
+            
+            _moveIndex++;
+        });
     }
     else
     {
